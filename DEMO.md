@@ -1,11 +1,11 @@
 # Demo runbook (5 minutes)
 
-A new real-model case takes about 15–20 seconds. The snapshot cases do not call the model.
+A new real-model case takes about 20–30 seconds. The snapshot cases do not call the model.
 
 ## Before
 
 1. Use the OS light theme. Silence notifications. Set the browser zoom to 100%.
-2. In `backend/.env`, set `LLM_PROVIDER` to the provider you will use, and set the matching key in the environment (`ANTHROPIC_API_KEY` or `OPENAI_API_KEY`). Do not print the key. Leave the model name as it is.
+2. In `backend/.env`, set `LLM_PROVIDER` to the provider you will use, and set the matching key in the environment or in `backend/.env` (`ANTHROPIC_API_KEY` or `OPENAI_API_KEY`). Do not print the key. Leave the model name as it is.
 3. Turn demo mode on, either by adding `DEMO_MODE=true` to `backend/.env`, or in the shell before you start the API. `API_PORT` is read only by the checklist script. The server itself takes `--port`.
 
 ```bash
@@ -21,7 +21,7 @@ $env:DEMO_MODE = "true"
 uv run uvicorn app.main:app --port 8100
 ```
 
-4. From `frontend` (`VITE_PORT` defaults to 5180, `VITE_API_TARGET` defaults to `http://127.0.0.1:8100`):
+4. From `frontend`, after `npm install` once (`VITE_PORT` defaults to 5180, `VITE_API_TARGET` defaults to `http://127.0.0.1:8100`):
 
 ```bash
 cd frontend

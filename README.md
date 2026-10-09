@@ -43,7 +43,7 @@ The graph is `guard → triage → (spam → close_no_reply) → retrieve → in
 ## Design decisions
 
 1. **The approval gate is structural.** There is no path from draft to send that skips `human_review`. The outbox row requires an approver.
-2. **Facts come from tools.** The investigation summary is rebuilt from tool output. A fact the model invented, and that no tool returned, is removed and recorded.
+2. **Facts come from tools.** The investigation's facts are rebuilt from tool output; the model writes only a summary, which is treated as data. A fact the model invented, and that no tool returned, is removed and recorded.
 3. **Customer text, tool output, and the draft are data.** They sit inside `<customer_email>`, `<tool_results>`, and `<draft>` tags. Delimiters inside the content are stripped, and the prompts say not to follow instructions found there. A deterministic guard flags injection attempts for the reviewer.
 4. **The assistant has no write tools.** It can look a case up. It cannot approve, send, or change one. `test_assistant_tools_are_read_only` fails if a write tool is added.
 5. **Side effects run once.** Each approved action is executed in `execute_actions` and recorded. A retry does not insert a second copy of an action that already succeeded, and it does not send a second outbox row.
@@ -104,7 +104,7 @@ uv run uvicorn app.main:app --port 8100
 
 ## Use a real model
 
-In `backend/.env`, set `LLM_PROVIDER=anthropic` and `LLM_MODEL=claude-sonnet-5-5`. Put the key in the environment as `ANTHROPIC_API_KEY`. Do not commit it.
+In `backend/.env`, set `LLM_PROVIDER=anthropic` and `LLM_MODEL=claude-sonnet-5-5`. Put the key in the environment, or in `backend/.env` (git-ignored), as `ANTHROPIC_API_KEY`. Do not commit it.
 
 For OpenAI, set `LLM_PROVIDER=openai` and `OPENAI_API_KEY`. Set `OPENAI_BASE_URL` for an OpenAI-compatible gateway.
 
@@ -112,7 +112,7 @@ For OpenAI, set `LLM_PROVIDER=openai` and `OPENAI_API_KEY`. Set `OPENAI_BASE_URL
 
 ## Evaluation
 
-The labels were written by the author of this repo, not by customers or a second annotator. This is a regression baseline, not an accuracy claim. The v1–v3 rows were measured on the 30 emails used while the prompts were being tuned. The holdout rows are 15 emails that were not used for tuning. Critical under-calls are cases labelled critical that the run scored lower. Severity disagreements are counted as lower (the model was less severe than the label) or higher.
+The labels were written by the author of this repo, not by customers or a second annotator. This is a regression baseline, not an accuracy claim. The main-set rows (v1–v3 and v9) were measured on the 30 emails used while the prompts were being tuned. The holdout rows are 15 emails that were not used for tuning. Critical under-calls are cases labelled critical that the run scored lower. Severity disagreements are counted as lower (the model was less severe than the label) or higher.
 
 | Date | Model | Prompt | n | Repeats | Category agreement | Severity agreement | Critical under-calls | Injection TP/FP/FN |
 |---|---|---|---:|---:|---|---|---:|---|
@@ -142,7 +142,7 @@ uv run python -m eval.run_actions_eval --repeat 1
 |---|---|---|
 | GET | `/api/health` | Provider, model, prompt version, demo flag |
 | GET | `/api/graph` | Compiled graph as Mermaid |
-| GET | `/api/samples` | The 30 labelled sample emails |
+| GET | `/api/samples` | The 30 sample emails (without labels) |
 | GET | `/api/metrics` | Status mix, review decisions, injection flags |
 | GET | `/api/cases` | Inbox |
 | POST | `/api/cases` | Run the pipeline; returns the case paused at review |
@@ -192,7 +192,7 @@ Offline. No API key. 89 tests.
 | `test_grounding.py` | A draft must cite retrieved policy, and a money promise must be in that policy |
 | `test_investigation.py` | Tools are read-only and bound to the sender; invented facts are removed; the draft is labelled as a draft |
 | `test_async_runs.py` | A background run reports progress from stored events, and retry continues a failed case |
-| `test_demo_reset.py` | Reset restores the snapshot, and reset waits while a case or a case list is open |
+| `test_demo_reset.py` | Reset restores the snapshot without changing it, and is refused (409) while a case run, a case list or an assistant call is in progress |
 | `test_logging.py` | Failure logs record the error type and a basename, not the customer's text or a full path |
 | `test_llm_wiring.py` | A missing key refuses to start; a model failure returns 503 and creates no case |
 
