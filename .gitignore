@@ -1,0 +1,24 @@
+# Local notes, reviews and task files. Never force-add this folder.
+/docs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+backend/.env
+backend/data/*.db
+backend/data/*.db-*
+backend/eval/results/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

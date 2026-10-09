@@ -1,0 +1,29 @@
+[
+  {
+    "id": "FP-14",
+    "model": "Meridian Atlas",
+    "year_from": 2021,
+    "year_to": 2023,
+    "component": "fuel pump",
+    "remedy": "Replace the fuel pump",
+    "status": "open"
+  },
+  {
+    "id": "AB-09",
+    "model": "Meridian Coast",
+    "year_from": 2020,
+    "year_to": 2022,
+    "component": "airbag",
+    "remedy": "Replace the driver airbag inflator",
+    "status": "open"
+  },
+  {
+    "id": "BR-02",
+    "model": "Meridian Dune",
+    "year_from": 2018,
+    "year_to": 2019,
+    "component": "brake hose",
+    "remedy": "Inspect the brake hose",
+    "status": "closed"
+  }
+]

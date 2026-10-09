@@ -1,0 +1,9 @@
+model=anthropic:claude-sonnet-5-5 prompt=v9 repeats=1
+PASS S01 run 1/1: ['schedule_roadside_pickup', 'book_safety_inspection', 'escalate_to_branch_manager']
+PASS S09 run 1/1: ['open_refund_review']
+PASS S16 run 1/1: ['forward_to_data_protection']
+PASS S24 run 1/1: none
+PASS S28 run 1/1: ['schedule_roadside_pickup', 'book_safety_inspection', 'register_recall_repair']
+PASS S30 run 1/1: ['schedule_roadside_pickup', 'book_safety_inspection', 'register_recall_repair']
+PASS S06 run 1/1: none
+failed=0

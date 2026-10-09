@@ -1,0 +1,9 @@
+{
+  "S01": {"must_include_any": ["schedule_roadside_pickup", "book_safety_inspection"], "must_not_include": ["open_refund_review"]},
+  "S09": {"must_include_any": ["open_refund_review"], "must_not_include": ["schedule_roadside_pickup"]},
+  "S16": {"must_include_any": ["forward_to_data_protection"], "must_not_include": ["open_refund_review"]},
+  "S24": {"must_include_any": [], "must_not_include": ["schedule_roadside_pickup"], "no_amount_anywhere": true},
+  "S28": {"must_include_any": ["book_safety_inspection", "register_recall_repair"], "must_not_include": ["open_refund_review"]},
+  "S30": {"must_include_any": ["register_recall_repair"], "must_not_include": []},
+  "S06": {"must_include_any": [], "must_not_include": ["schedule_roadside_pickup", "escalate_to_branch_manager", "open_refund_review"]}
+}

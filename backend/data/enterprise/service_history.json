@@ -1,0 +1,32 @@
+{
+  "MDUNES01HADDAD001": [
+    {
+      "date": "2026-03-02",
+      "branch": "Al Quoz",
+      "work": "Earlier brake complaint visit",
+      "technician_notes": "Customer reported a squeal. Pads and discs inspected. No safety fault recorded that day."
+    },
+    {
+      "date": "2026-08-10",
+      "branch": "Al Quoz",
+      "work": "60,000 km service with a brake inspection",
+      "technician_notes": "Brake fluid checked during the service. Customer collected the SUV the same week."
+    }
+  ],
+  "MCOAST28NOVAK001": [
+    {
+      "date": "2026-06-18",
+      "branch": "Abu Dhabi",
+      "work": "Annual service",
+      "technician_notes": "No airbag warning at the time of the service."
+    }
+  ],
+  "MATLAS30LINDG001": [
+    {
+      "date": "2026-05-04",
+      "branch": "Sharjah",
+      "work": "Scheduled service",
+      "technician_notes": "Fuel pump recall was not carried out at this visit."
+    }
+  ]
+}

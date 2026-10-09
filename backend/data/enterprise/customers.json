@@ -1,0 +1,132 @@
+{
+  "r.haddad@example.com": {
+    "name": "Rami Haddad",
+    "vehicle": {"model": "Meridian Dune", "model_year": 2023, "vin": "MDUNES01HADDAD001", "purchase_date": "2023-04-18", "mileage": 61240},
+    "preferred_branch": "Al Quoz"
+  },
+  "m.pereira@example.com": {
+    "name": "Marta Pereira",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2022, "vin": "MHARBOR02PEREI01", "purchase_date": "2022-11-02", "mileage": 41000},
+    "preferred_branch": "Sharjah"
+  },
+  "s.khan@example.com": {
+    "name": "Sara Khan",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2021, "vin": "MHARBOR03KHAN001", "purchase_date": "2021-06-14", "mileage": 55010},
+    "preferred_branch": "Dubai Mall"
+  },
+  "j.osei@example.com": {
+    "name": "Joseph Osei",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2018, "vin": "MHARBOR04OSEI001", "purchase_date": "2018-09-01", "mileage": 98000},
+    "preferred_branch": "Al Quoz"
+  },
+  "a.rahman@example.com": {
+    "name": "Amina Rahman",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2020, "vin": "MHARBOR05RAHMA01", "purchase_date": "2020-02-20", "mileage": 72040},
+    "preferred_branch": "Sharjah"
+  },
+  "l.meyer@example.com": {
+    "name": "Lena Meyer",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2024, "vin": "MHARBOR06MEYER01", "purchase_date": "2024-01-09", "mileage": 12000},
+    "preferred_branch": "Dubai Mall"
+  },
+  "d.ivanova@example.com": {
+    "name": "Daria Ivanova",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2023, "vin": "MHARBOR07IVANO01", "purchase_date": "2023-03-03", "mileage": 70000},
+    "preferred_branch": "Abu Dhabi"
+  },
+  "k.tan@example.com": {
+    "name": "Kevin Tan",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2024, "vin": "MHARBOR08TAN0001", "purchase_date": "2024-05-22", "mileage": 18000},
+    "preferred_branch": "Dubai Mall"
+  },
+  "p.santos@example.com": {
+    "name": "Paulo Santos",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2019, "vin": "MHARBOR09SANTOS1", "purchase_date": "2019-08-08", "mileage": 84000},
+    "preferred_branch": "Al Quoz"
+  },
+  "h.ali@example.com": {
+    "name": "Hassan Ali",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2022, "vin": "MHARBOR10ALI0001", "purchase_date": "2022-01-15", "mileage": 36000},
+    "preferred_branch": "Sharjah"
+  },
+  "c.wong@example.com": {
+    "name": "Chloe Wong",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2021, "vin": "MHARBOR11WONG001", "purchase_date": "2021-10-10", "mileage": 49000},
+    "preferred_branch": "Abu Dhabi"
+  },
+  "t.nguyen@example.com": {
+    "name": "Trang Nguyen",
+    "vehicle": null,
+    "preferred_branch": "Dubai Mall"
+  },
+  "e.costa@example.com": {
+    "name": "Elena Costa",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2020, "vin": "MHARBOR13COSTA01", "purchase_date": "2020-07-07", "mileage": 61000},
+    "preferred_branch": "Abu Dhabi"
+  },
+  "b.schmidt@example.com": {
+    "name": "Ben Schmidt",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2024, "vin": "MHARBOR14SCHMID1", "purchase_date": "2025-12-01", "mileage": 4000},
+    "preferred_branch": "Dubai Mall"
+  },
+  "f.ahmed@example.com": {
+    "name": "Fatima Ahmed",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2017, "vin": "MHARBOR15AHMED01", "purchase_date": "2017-04-04", "mileage": 120000},
+    "preferred_branch": "Sharjah"
+  },
+  "n.olsen@example.com": {
+    "name": "Nora Olsen",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2019, "vin": "MHARBOR16OLSEN01", "purchase_date": "2019-02-02", "mileage": 77000},
+    "preferred_branch": "Al Quoz"
+  },
+  "g.romero@example.com": {
+    "name": "Gabriel Romero",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2022, "vin": "MHARBOR17ROMERO1", "purchase_date": "2022-06-06", "mileage": 33000},
+    "preferred_branch": "Dubai Mall"
+  },
+  "v.rossi@example.com": {
+    "name": "Vale Rossi",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2019, "vin": "MHARBOR20ROSSI01", "purchase_date": "2019-09-09", "mileage": 68000},
+    "preferred_branch": "Dubai Mall"
+  },
+  "y.alnuaimi@example.com": {
+    "name": "Yousef Al Nuaimi",
+    "vehicle": {"model": "Meridian Dune", "model_year": 2022, "vin": "MDUNE21NUAIMI001", "purchase_date": "2022-08-18", "mileage": 54000},
+    "preferred_branch": "Al Quoz"
+  },
+  "o.almansoori@example.com": {
+    "name": "Omar Al Mansoori",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2021, "vin": "MHARBOR22MANSO01", "purchase_date": "2021-01-21", "mileage": 47000},
+    "preferred_branch": "Abu Dhabi"
+  },
+  "z.alshamsi@example.com": {
+    "name": "Zayed Al Shamsi",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2020, "vin": "MHARBOR23SHAMS01", "purchase_date": "2020-12-12", "mileage": 80000},
+    "preferred_branch": "Sharjah"
+  },
+  "s.dubois@example.com": {
+    "name": "Sophie Dubois",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2023, "vin": "MHARBOR26DUBOIS1", "purchase_date": "2023-07-19", "mileage": 28000},
+    "preferred_branch": "Dubai Mall"
+  },
+  "r.mehta@example.com": {
+    "name": "Rohan Mehta",
+    "vehicle": {"model": "Meridian Harbor", "model_year": 2021, "vin": "MHARBOR27MEHTA01", "purchase_date": "2021-05-05", "mileage": 52000},
+    "preferred_branch": "Al Quoz"
+  },
+  "i.novak@example.com": {
+    "name": "Ivana Novak",
+    "vehicle": {"model": "Meridian Coast", "model_year": 2021, "vin": "MCOAST28NOVAK001", "purchase_date": "2021-03-30", "mileage": 45500},
+    "preferred_branch": "Abu Dhabi"
+  },
+  "w.clarke@example.com": {
+    "name": "William Clarke",
+    "vehicle": null,
+    "preferred_branch": "Dubai Mall"
+  },
+  "q.lindgren@example.com": {
+    "name": "Quinn Lindgren",
+    "vehicle": {"model": "Meridian Atlas", "model_year": 2022, "vin": "MATLAS30LINDG001", "purchase_date": "2022-09-14", "mileage": 39000},
+    "preferred_branch": "Sharjah"
+  }
+}
